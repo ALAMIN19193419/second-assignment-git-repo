@@ -516,18 +516,29 @@ footer {
     /* Flower Lover */
     .flower-lover {
         padding: 40px 0;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 100px;
     }
 
     .flower-lover .container {
         flex-direction: column;
         gap: 30px;
+        width: 200px;
+        height: 200px;
     }
 
     .trusted-badge {
-        width: 100px;
-        height: 100px;
-        top: -20px;
-        right: -20px;
+        width: 286px;
+        height: 286px;
+        top: -20pxpx;
+        right:-20pxpx;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%)
+        z-index: 10;
     }
 
     .flower-lover-text h2 {
