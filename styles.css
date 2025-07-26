@@ -273,12 +273,12 @@ nav a.active {
 }
 .deal-1 {
     grid-area: small1;
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://i.imgur.com/uR1GajC.png');
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/deal-bloom.png');
 }
 
 .deal-2 {
     grid-area: small2;
-     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://i.imgur.com/vHq72nZ.png');
+     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/deal-ana.png');
 }
 
 .deal-item-large {
@@ -290,7 +290,7 @@ nav a.active {
     justify-content: center;
     align-items: center;
     padding: 20px;
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://i.imgur.com/tL8xB0K.png');
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/deal-zabo.png');
     background-size: cover;
     background-position: center;
 }
