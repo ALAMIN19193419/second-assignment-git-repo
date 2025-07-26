@@ -1,0 +1,612 @@
+/* General Body Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #F5F8FF;
+    color: #252432;
+    margin: 0;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background-color: #F5F8FF;
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 135px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 48px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #8987A1;
+    font-size: 16px;
+}
+
+nav a.active {
+    color: #252432;
+    font-weight: 700;
+}
+
+.cart {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cart-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.cart span {
+    font-size: 16px;
+    color: #000000;
+}
+
+.mobile-cart {
+    display: none;
+}
+
+
+/* Hero Section */
+.hero {
+    padding: 80px 0;
+}
+
+.hero .container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h1 {
+    font-family: 'Noto Serif', serif;
+    font-size: 65px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0 0 13px 0;
+    color: #000000;
+}
+
+.hero-text h1 .highlight {
+    color: #E95A08;
+}
+
+.hero-text p {
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.5);
+    line-height: 1.5;
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Our Plants Section */
+.our-plants {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.our-plants h2 {
+    font-family: 'Noto Serif', serif;
+    font-size: 50px;
+    color: #E95A08;
+    margin-bottom: 16px;
+}
+
+.our-plants > .container > p {
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.5);
+    max-width: 888px;
+    margin: 0 auto 49px auto;
+}
+
+.plant-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.plant-item {
+    background-color: #FFFFFF;
+    text-align: center;
+}
+
+.plant-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.plant-info {
+    padding: 20px 0;
+}
+
+.plant-info h3 {
+    font-size: 22px;
+    font-weight: 500;
+    margin: 0 0 10px 0;
+}
+
+.plant-info p {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.add-to-cart-btn {
+    background-color: #E95A08;
+    color: #FFFFFF;
+    border: none;
+    padding: 15px 0;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+/* Flower Lover Section */
+.flower-lover {
+    padding: 80px 0;
+}
+
+.flower-lover .container {
+    display: flex;
+    align-items: center;
+    gap: 62px;
+    position: relative;
+}
+
+.flower-lover-image {
+    flex: 1;
+    position: relative;
+}
+
+.flower-lover-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.trusted-badge {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: -50px;
+    right: -50px;
+    filter: drop-shadow(-4px 10px 4px rgba(0, 0, 0, 0.25));
+}
+
+
+.flower-lover-text {
+    flex: 1;
+}
+
+.flower-lover-text h2 {
+    font-family: 'Noto Serif', serif;
+    font-size: 50px;
+    margin: 0 0 20px 0;
+}
+
+.flower-lover-text ul {
+    list-style-type: '• ';
+    padding-left: 20px;
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.5);
+    line-height: 1.5;
+}
+
+.flower-lover-text ul li {
+    margin-bottom: 20px;
+}
+
+/* Latest Deals Section */
+.latest-deals {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.latest-deals h2 {
+    font-family: 'Noto Serif', serif;
+    font-size: 50px;
+    color: #E95A08;
+    margin-bottom: 16px;
+}
+
+.latest-deals > .container > p {
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.5);
+    max-width: 888px;
+    margin: 0 auto 49px auto;
+}
+
+.deals-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 28px;
+    grid-template-areas:
+        "small1 large"
+        "small2 large";
+}
+
+.deal-item-small {
+    border-radius: 14px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+}
+.deal-1 {
+    grid-area: small1;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://i.imgur.com/uR1GajC.png');
+}
+
+.deal-2 {
+    grid-area: small2;
+     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://i.imgur.com/vHq72nZ.png');
+}
+
+.deal-item-large {
+    grid-area: large;
+    border-radius: 22px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://i.imgur.com/tL8xB0K.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.deal-item-small h3 {
+    font-family: 'Noto Serif', serif;
+    font-size: 20px;
+    margin: 0 0 10px 0;
+}
+
+.deal-item-small a {
+    color: white;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.deal-item-large h3 {
+    font-family: 'Noto Serif', serif;
+    font-size: 40px;
+    margin: 0 0 10px 0;
+}
+
+.deal-item-large a {
+    color: white;
+    text-decoration: underline;
+    font-weight: 600;
+    font-size: 28px;
+}
+
+
+/* Newsletter Section */
+.newsletter {
+    padding: 120px 0;
+    background: linear-gradient(0deg, rgba(7, 51, 79, 0.4), rgba(7, 51, 79, 0.4)), url('https://i.imgur.com/X0kPCiT.png');
+    background-size: cover;
+    background-position: center;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.newsletter h2 {
+    font-family: 'Noto Serif', serif;
+    font-size: 50px;
+    margin: 0 0 23px 0;
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    max-width: 830px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 5px;
+}
+
+.newsletter input {
+    flex-grow: 1;
+    border: none;
+    padding: 15px 20px;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.newsletter input:focus {
+    outline: none;
+}
+
+.newsletter button {
+    background-color: #E95A08;
+    color: white;
+    border: none;
+    padding: 15px 50px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+/* Footer */
+footer {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 50px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.footer-main {
+    display: flex;
+    justify-content: space-between;
+    gap: 48px;
+}
+
+.footer-about {
+    max-width: 359px;
+}
+
+.footer-logo {
+    width: 135px;
+    margin-bottom: 16px;
+}
+
+.footer-about p {
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.5);
+    line-height: 1.5;
+}
+
+.footer-links h4, .footer-social h4 {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 0 32px 0;
+    color: #000;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 16px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #6B7280;
+    font-size: 16px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 24px;
+}
+
+.social-icons a img {
+    width: 36px;
+    height: 36px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 16px;
+    }
+
+    /* Header */
+    nav {
+        display: none;
+    }
+
+    .cart {
+        display: none;
+    }
+     .mobile-cart {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+
+    header .container {
+        justify-content: space-between;
+    }
+
+    .logo img {
+        width: 100px;
+    }
+
+
+    /* Hero */
+    .hero {
+        padding: 40px 0;
+        text-align: center;
+    }
+
+    .hero .container {
+        flex-direction: column-reverse;
+    }
+
+    .hero-text h1 {
+        font-size: 24px;
+    }
+
+     .hero-text p {
+        font-size: 14px;
+    }
+
+
+    /* Our Plants */
+     .our-plants {
+        padding: 40px 0;
+    }
+    .our-plants h2 {
+        font-size: 24px;
+    }
+
+    .our-plants > .container > p {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    .plant-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .plant-info h3, .plant-info p {
+        font-size: 16px;
+    }
+
+    .add-to-cart-btn {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+
+    /* Flower Lover */
+    .flower-lover {
+        padding: 40px 0;
+    }
+
+    .flower-lover .container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .trusted-badge {
+        width: 100px;
+        height: 100px;
+        top: -20px;
+        right: -20px;
+    }
+
+    .flower-lover-text h2 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .flower-lover-text ul {
+        font-size: 14px;
+    }
+
+
+    /* Latest Deals */
+    .latest-deals {
+        padding: 40px 0;
+    }
+    .latest-deals h2 {
+        font-size: 24px;
+    }
+     .latest-deals > .container > p {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    .deals-grid {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "small1"
+            "small2"
+            "large";
+        height: auto;
+    }
+     .deal-item-small, .deal-item-large {
+        min-height: 200px;
+    }
+
+    .deal-item-large h3 {
+        font-size: 24px;
+    }
+     .deal-item-large a {
+        font-size: 20px;
+    }
+
+    /* Newsletter */
+    .newsletter {
+        padding: 60px 20px;
+    }
+
+    .newsletter h2 {
+        font-size: 24px;
+    }
+
+    .newsletter form {
+        flex-direction: column;
+        background: none;
+        gap: 10px;
+    }
+
+    .newsletter input {
+        border-radius: 5px;
+    }
+    .newsletter button {
+        border-radius: 5px;
+        padding: 15px;
+    }
+
+
+    /* Footer */
+    .footer-main {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-about, .footer-links, .footer-social {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .footer-about p {
+        font-size: 16px;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+}
