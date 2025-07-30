@@ -334,7 +334,7 @@ nav a.active {
 /* Newsletter Section */
 .newsletter {
     padding: 120px 0;
-    background: linear-gradient(0deg, rgba(7, 51, 79, 0.4), rgba(7, 51, 79, 0.4)), url('https://i.imgur.com/X0kPCiT.png');
+    background: linear-gradient(0deg, rgba(7, 51, 79, 0.4), rgba(7, 51, 79, 0.4)), url('images/news-letter-bg.png');
     background-size: cover;
     background-position: center;
     color: #FFFFFF;
